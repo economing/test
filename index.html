@@ -2,99 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ming Fang | MSU </title> <!--鼠标在网页标签上时显示的信息-->
-    <style>
-        table{
-            border: 1px solid black;		/*表示设置边框的格式、宽度、颜色*/
-				border-spacing: 0px;			/*border-spacing表示设置边框的间距*/
-				border-collapse: collapse;		/*collapse表示设置边框不相互重叠*/
-            }
-        th,td{
-				border: 1px solid black;
-			}
-    </style>
+    <title>Title</title>
 </head>
+	<!--frameset不可写到body里-->
+<frameset rows="20%,80%">
+		<frame src="Frame_top.html" />
+		<frameset cols="20%,*">
+			<frame src="Frame_left.html" />
+			<frame src="Frame_right.html"  name="right"/>
+		</frameset>
+</frameset>
 <body>
-<h1>1. Basic elements</h1>
-    <!--行内元素，长度和宽度包裹内容，不会自动换行-->
-    <b>Bold</b>; <i> italic</i>
-    <!--块级元素，长度填充整个父标记，高度包裹内容，单独成行；文本居中只能应用于块级元素-->
-    <h1 style="color:pink">Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <P>Paragraph 2</P>
-    <!--Ordered list-->
-    <ol>
-        <li>Math</li>
-        <li>English</li>
-    </ol>
-    <!--Unordered list-->
-    <ul>
-        <li>Math</li>
-        <li>English</li>
-    </ul>
-
-<h1>2. Table</h1>
-    <table>
-        <tr>
-            <th>序号</th><th>姓名</th><th>手机号</th><th>家庭地址</th>
-        </tr>
-        <tr>
-            <td>1</td><td>jordan</td><td>110</td><td>北京市海淀区</td>
-        </tr>
-    </table>
-    <i>Notes: 表格格式通过head里面的style设置</i>
-<h1>3. Form 表单</h1>
-    <!--隐藏框-->
-			<input type="hidden" />			<!--浏览器打开无直接效果-->
-		<!--文本框-->
-			<input type="text" placeholder="请输入用户名" />
-	    <!--密码框-->
-			<input type="password" placeholder="请输入密码" />
-		<!--文件框-->
-			<input type="file">
-	    <!--单选框-->
-			<input type="radio" name="sex" id="male" /><label for="male">男</label>
-			<input type="radio" name="sex" id="female" /><label for="female">女</label>
-
-        <!--下拉列表-->
-        	<select>
-				<option>--请选择--</option>
-				<option>河南省</option>
-				<option>河北省</option>
-				<option>安徽省</option>
-			</select>
-			<!--文本域-->
-			<textarea>
-
-			</textarea>
-
-<h1>4. 表格单元格合并</h1>
-            <table>
-			<tr>
-				<th colspan="9" align="center">2013年度图书销售统计</th>
-			</tr>
-			<tr>
-				<td rowspan="2">图书分类</td><td colspan="2">一季度</td><td colspan="2">二季度</td><td colspan="2">三季度</td><td colspan="2">四季度</td>
-			</tr>
-			<tr>
-				<td>销售量</td><td>销售额</td><td>销售量</td><td>销售额</td><td>销售量</td><td>销售额</td><td>销售量</td><td>销售额</td>
-			</tr>
-			<tr>
-				<td>小说</td><td>25231</td><td>￥559,940.00</td><td>18423</td><td>￥44,841.00</td><td>32125</td><td>￥829,870.00</td><td>25188</td><td>586,564.00</td>
-			</tr>
-						<tr>
-				<td>文艺</td><td>25231</td><td>￥559,940.00</td><td>18423</td><td>￥44,841.00</td><td>32125</td><td>￥829,870.00</td><td>25188</td><td>586,564.00</td>
-			</tr>
-						<tr>
-				<td>励志/成功</td><td>25231</td><td>￥559,940.00</td><td>18423</td><td>￥44,841.00</td><td>32125</td><td>￥829,870.00</td><td>25188</td><td>586,564.00</td>
-			</tr>
-						<tr>
-				<td>童书 </td><td>25231</td><td>￥559,940.00</td><td>18423</td><td>￥44,841.00</td><td>32125</td><td>￥829,870.00</td><td>25188</td><td>586,564.00</td>
-			</tr>
-		</table>
-
-
-
 </body>
 </html>
