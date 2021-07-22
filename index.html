@@ -9,48 +9,38 @@
 	<style type="text/css">
 		/* Copyright 2014-present Evernote Corporation. All rights reserved. */
 		@keyframes caretBlink {
-    	from { opacity: 1.0; }
-    	to { opacity: 0.0; }
+    		from { opacity: 1.0; } to { opacity: 0.0; }
+    		}
+		@keyframes rotateSpinner {
+    		from {transform:rotate(0deg);} to {transform:rotate(360deg);}
 		}
 
-		@keyframes rotateSpinner {
-    		from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
-}
+		#text-tool-caret {
+			animation-name: caretBlink;
+			animation-iteration-count: infinite;
+			animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+			animation-duration: 1s;
+		}
 
-#text-tool-caret {
-    animation-name: caretBlink;
-    animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(1.0,0,0,1.0);
-    animation-duration: 1s;
-}
+		#en-markup-loading-spinner {
+			position: absolute;
+			top: calc(50% - 16px);
+			left: calc(50% - 16px);
+			width: 32px;
+			height: 32px;
+		}
 
-#en-markup-loading-spinner {
-    position: absolute;
-    top: calc(50% - 16px);
-    left: calc(50% - 16px);
-    width: 32px;
-    height: 32px;
-}
-
-#en-markup-loading-spinner img {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    animation-name: rotateSpinner;
-    animation-duration: 0.6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
+		#en-markup-loading-spinner img {
+			position: relative;
+			top: 0px;
+			left: 0px;
+			animation-name: rotateSpinner;
+			animation-duration: 0.6s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
 </style>
-    <style>
-		body{background-color: White;}
-    </style>
-	<base href="http://economing.github.io/test" target="_blank">
+	
 </head>
 <body>
 	<header class="site-header" role="banner">
@@ -65,7 +55,7 @@
 			</nav>
 		</div>
 	</header>
-	::after
+
 	<main class="page-content" arial-label="content">
 		<div class="wrapper">
 			<p>
@@ -113,86 +103,5 @@
 
 		</div>
 	</footer>
-<h1>1. Basic elements</h1>
-    <!--行内元素，长度和宽度包裹内容，不会自动换行-->
-    <b>Bold</b>; <i> italic</i>
-    <!--块级元素，长度填充整个父标记，高度包裹内容，单独成行；文本居中只能应用于块级元素-->
-    <h1 style="color:pink">Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <P>Paragraph 2</P>
-    <!--Ordered list-->
-    <ol>
-        <li>Math</li>
-        <li>English</li>
-    </ol>
-    <!--Unordered list-->
-    <ul>
-        <li>Math</li>
-        <li>English</li>
-    </ul>
-
-<h1>2. Table</h1>
-    <table>
-        <tr>
-            <th>序号</th><th>姓名</th><th>手机号</th><th>家庭地址</th>
-        </tr>
-        <tr>
-            <td>1</td><td>jordan</td><td>110</td><td>北京市海淀区</td>
-        </tr>
-    </table>
-    <i>Notes: 表格格式通过head里面的style设置</i>
-<h1>3. Form 表单</h1>
-    <!--隐藏框-->
-			<input type="hidden" />			<!--浏览器打开无直接效果-->
-		<!--文本框-->
-			<input type="text" placeholder="请输入用户名" />
-	    <!--密码框-->
-			<input type="password" placeholder="请输入密码" />
-		<!--文件框-->
-			<input type="file">
-	    <!--单选框-->
-			<input type="radio" name="sex" id="male" /><label for="male">男</label>
-			<input type="radio" name="sex" id="female" /><label for="female">女</label>
-
-        <!--下拉列表-->
-        	<select>
-				<option>--请选择--</option>
-				<option>河南省</option>
-				<option>河北省</option>
-				<option>安徽省</option>
-			</select>
-			<!--文本域-->
-			<textarea>
-
-			</textarea>
-
-<h1>4. 表格单元格合并</h1>
-            <table>
-			<tr>
-				<th colspan="9" align="center">2013年度图书销售统计</th>
-			</tr>
-			<tr>
-				<td rowspan="2">图书分类</td><td colspan="2">一季度</td><td colspan="2">二季度</td><td colspan="2">三季度</td><td colspan="2">四季度</td>
-			</tr>
-			<tr>
-				<td>销售量</td><td>销售额</td><td>销售量</td><td>销售额</td><td>销售量</td><td>销售额</td><td>销售量</td><td>销售额</td>
-			</tr>
-			<tr>
-				<td>小说</td><td>25231</td><td>￥559,940.00</td><td>18423</td><td>￥44,841.00</td><td>32125</td><td>￥829,870.00</td><td>25188</td><td>586,564.00</td>
-			</tr>
-						<tr>
-				<td>文艺</td><td>25231</td><td>￥559,940.00</td><td>18423</td><td>￥44,841.00</td><td>32125</td><td>￥829,870.00</td><td>25188</td><td>586,564.00</td>
-			</tr>
-						<tr>
-				<td>励志/成功</td><td>25231</td><td>￥559,940.00</td><td>18423</td><td>￥44,841.00</td><td>32125</td><td>￥829,870.00</td><td>25188</td><td>586,564.00</td>
-			</tr>
-						<tr>
-				<td>童书 </td><td>25231</td><td>￥559,940.00</td><td>18423</td><td>￥44,841.00</td><td>32125</td><td>￥829,870.00</td><td>25188</td><td>586,564.00</td>
-			</tr>
-		</table>
-
-
-
 </body>
 </html>
