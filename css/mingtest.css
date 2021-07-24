@@ -10,25 +10,25 @@
 /*顶部面板样式*/
 #header {
     width:100%;
-    height:70px;
-    border-bottom:1px #626262 solid;
+    height:60px;
+    border-bottom:1px RGBA(98,98,98,0.4) solid;
 }
 .header_left {
     float:left;
-    margin-left: 2%;
-    margin-bottom: 2%;
+    margin-left: 5%;
+    margin-top: 15px;
     width:180px;
-    height:60%;
+    height:75%;
     text-align: center;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Garamond", serif;
     font-size: 30px;
     color: #626262;
-    #border:2px #F00 solid;
+    border:2px #F00 solid;
 }
 .header_right {
     float:right;
-    margin-left:15%;
-    margin-bottom: 2%;
+    margin-right:1%;
+    margin-top: 15px;
     width:60%;
     height:60%;
     #border:2px #F00 solid;
@@ -43,14 +43,14 @@
     width:80px;
     height:60%;
     text-align: center;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open sans", sans-serif;
     font-size: 15px;
     color: #626262;
     #border:2px #F00 solid;
 }
 .header_r:hover{
     background-color:#dee2e6;
-    color: #28a745;
+    color: #5f9ea0;
 }
 /*中间部分面板样式*/
 #main {
@@ -61,52 +61,57 @@
 
 .mainleft {
     float:left;
-    margin-left: 3%;
+    margin-left: 5%;
     margin-top: 3%;
     width:38%;
-    max-width:310px;
-    min-width:300px;
+    max-width:330px;
+    min-width:320px;
     height:85%;
-    #border:2px #F00 solid;
+    border:2px #F00 solid;
 }
 .mainleft_up {
     margin-top: 1%;
-    margin-left: 13%;
-    height:70%;
-    max-width:220px;
+    margin-left: 3%;
+    height:80%;
+    max-width:260px;
     align-items:center;
     #border:2px #F004 solid;
 }
 .mainleft_bottom {
-    margin-left: 3%;
-    margin-top: 5%;
+    margin-left: 5%;
+    margin-top: 3%;
     text-align:left;
     height:30%;
     #border:2px #F004 solid;
 }
 .mainright {
     float:left;
-    margin-left: 1%;
     margin-top: 3%;
-    width:55%;
+    margin-right: 1%;
+    width:50%;
     height:85%;
-    #border:2px #F00 solid;
-    padding-left: 7px;
+    border:2px #F00 solid;
+    padding-left: 1px;
 }
 p{
-    font-family: "Open Sans", sans-serif;
-    font-size: 15px;
+    font-family: "Georgia", serif;
+    font-size: 16px;
     padding-top: 1%;
+    color: RGBA(0,0,0,0.8);
 }
+
 .edu{
-    font-size: 10px;
+    font-size: 11px;
     color: #626262;
+    font-family: "Garamond", sans-serif;
 }
 
 /*底部面板样式*/
 #footer {
+    margin-bottom: 2%;
+    margin-left: 3%;
     width:100%;
-    height:80px;
+    height:50px;
 }
 
 .photo{
