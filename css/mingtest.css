@@ -6,7 +6,7 @@
     max-width:850px
     margin:5px auto;/*主面板DIV居中*/
     overflow-x: hidden;
-    border:3px #F00 solid;
+    #border:3px #F00 solid;
 }
 /*顶部面板样式*/
 #header {
